@@ -14,7 +14,8 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Clicking Download will start a download then signal an abort.</p>
+    <ion-button [disabled]="downloading" (click)="download()">Download</ion-button>
+    <ion-button (click)="abort()">Abort</ion-button>
   </div>
 </ion-content>
